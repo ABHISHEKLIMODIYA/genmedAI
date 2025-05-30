@@ -1,0 +1,6 @@
+Gene,Variant,Drug,Effect,Explanation
+CYP2D6,*1,Metoprolol,Normal Metabolism,Metoprolol is metabolized normally with CYP2D6*1.
+CYP2D6,*4,Metoprolol,Poor Metabolism,CYP2D6*4 leads to poor metabolism of Metoprolol.
+CYP3A4,*1,Simvastatin,Good Response,Simvastatin works well with CYP3A4*1.
+SLCO1B1,*5,Simvastatin,Risk of Myopathy,SLCO1B1*5 may increase muscle side effects with Simvastatin.
+CYP2C9,*2,Warfarin,Increased Bleeding,CYP2C9*2 can slow Warfarin metabolism; monitor closely.

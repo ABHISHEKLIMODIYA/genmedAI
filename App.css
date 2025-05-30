@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.britannica.com%2Fscience%2FDNA&psig=AOvVaw2O0v-r5zACzcdS_zgN4GB8&ust=1748679504048000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJCu1_ngyo0DFQAAAAAdAAAAABAE";
+}
+nav {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container a, .nav-container button {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-container a:hover, .nav-container button:hover {
+  text-decoration: underline;
+}
+.nav-container a:focus, .nav-container button:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 5rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, select, button {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+input:focus, select:focus, button:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+button {
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #1e40af;
+}
+.error {
+  color: #dc2626;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.link {
+  text-align: center;
+  margin-top: 1rem;
+}
+.link a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.link a:hover {
+  text-decoration: underline;
+}
+.link a:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  animation: fade-in 0.5s ease-out;
+}
+.result h3 {
+  font-size: 1.125rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+.result p {
+  margin: 0.5rem 0;
+}
+.result p span {
+  font-weight: bold;
+}
+.loading {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+.front-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.hero {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.tagline {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+.cta-button:hover {
+  background-color: #1e40af;
+}
+.cta-button:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+.footer {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-link:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 4rem 1rem;
+    padding: 1rem;
+  }
+  nav {
+    padding: 0.5rem;
+  }
+  .nav-container a, .nav-container button {
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
